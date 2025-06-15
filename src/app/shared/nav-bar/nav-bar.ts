@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './nav-bar.css'
 })
 export class NavBar {
+  isMenuOpen = false;
 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+    console.log("Manu abierto");
+  }
 }
